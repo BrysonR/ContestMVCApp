@@ -32,3 +32,37 @@ c:\users\bradl\documents\visual studio 2012\Projects\ContestMvcApp\ContestMvcApp
 c:\users\bradl\documents\visual studio 2012\Projects\ContestMvcApp\ContestMvcApp\bin\System.Web.WebPages.Razor.xml
 c:\users\bradl\documents\visual studio 2012\Projects\ContestMvcApp\ContestMvcApp\obj\Debug\ContestMvcApp.dll
 c:\users\bradl\documents\visual studio 2012\Projects\ContestMvcApp\ContestMvcApp\obj\Debug\ContestMvcApp.pdb
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\ContestMvcApp.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\ContestMvcApp.pdb
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\Newtonsoft.Json.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\StructureMap.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Helpers.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Http.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Mvc.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Razor.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.WebPages.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\WebActivator.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\StructureMap.pdb
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\StructureMap.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\Newtonsoft.Json.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Helpers.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Http.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Mvc.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.Razor.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.WebPages.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\obj\Debug\ContestMvcApp.csprojResolveAssemblyReference.cache
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\obj\Debug\ContestMvcApp.dll
+C:\Users\Bryson Reynolds\Documents\GitHub\ContestMVCApp\ContestMvcApp\obj\Debug\ContestMvcApp.pdb

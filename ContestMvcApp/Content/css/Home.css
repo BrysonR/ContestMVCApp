@@ -1,0 +1,12 @@
+﻿body {
+    background: black;
+}
+
+.home-page-wrapper {
+    background: white;
+    height: 1200px;
+}
+
+h2 {
+    color: white;
+}
