@@ -1,12 +1,22 @@
-﻿body {
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
     background: black;
 }
 
 .home-page-wrapper {
     background: white;
-    height: 1200px;
+    height: 100%;
 }
 
 h2 {
     color: white;
+}
+
+.list {
+    margin-bottom: 0;
 }
