@@ -9,7 +9,6 @@ html, body {
 }
 
 .header {
-    background: grey;
     position: fixed;
     height: 50px;
     width: 100%;
@@ -20,7 +19,6 @@ html, body {
 .home-page-wrapper {
     margin-top: 100px;
     background: white;
-    height: 100%;
 }
 
 .headertext {
@@ -40,4 +38,5 @@ html, body {
 .field-header {
     margin-top: 0.75em;
     text-align: center;
+    color: white;
 }

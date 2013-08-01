@@ -8,37 +8,39 @@
     <center><h2 class="headertext">This is Pretty Kickass!</h2></center>
 </div>  
 
-<div class="row collapse">
-    <div class="large-8 large-centered columns">
+<div class="row">
+    <div class="large-8 small-12 small-centered columns">
         <div class="panel home-page-wrapper">
-            <button class="button large primary large-centered columns list" data-bind="click: createItem">List Item</button>
+            <button class="button large primary small-centered columns list" data-bind="click: createItem">List Item</button>
         </div>
     </div>
 </div>
 
-<!-- ko 'if': itemToList() -->
+<!-- ko 'if': itemToList() === true -->
 <div class="row collapse">
-    <div class="large-9 large-centered columns edit">
-        <div class="panel">
-            <div class="row collapse">
-                <div class="large-2 columns">
-                    <label class="field-header">Title</label>
+    <div data-bind="with: listingToAdd">
+        <div class="large-9 small-12 small-centered columns edit">
+            <div class="panel callout radius">
+                <div class="row collapse">
+                    <div class="large-2 columns">
+                        <label class="field-header">Title</label>
+                    </div>
+                    <div class="large-10 columns">
+                        <input type="text" data-bind="value: listTitle" placeholder="Please enter the listing title"/>
+                    </div>
                 </div>
-                <div class="large-10 columns">
-                    <input type="text" data-bind="value: listTitle" placeholder="Please enter the listing title"/>
+                <div class="row collapse">
+                    <div class="large-2 columns">
+                        <label class="field-header">Category</label>
+                    </div>
+                    <div class="large-10 columns">
+                        <input type="text" data-bind="value: listCategory" placeholder="Please select category"/>
+                    </div>
                 </div>
-            </div>
-            <div class="row collapse">
-                <div class="large-2 columns">
-                    <label class="field-header">Category</label>
-                </div>
-                <div class="large-10 columns">
-                    <input type="text" data-bind="value: listCategory" placeholder="Please select category"/>
-                </div>
-            </div>
-            <div class="row collapse">
-                <div class="large-2 large-centered columns">
-                    <button class="primary" data-bind="click: done">Done</button>
+                <div class="row collapse">
+                    <div class="large-2 large-centered columns">
+                        <button class="secondary" data-bind="click: $parent.saveListing">Done</button>
+                    </div>
                 </div>
             </div>
         </div>
