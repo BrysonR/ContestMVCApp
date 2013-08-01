@@ -5,16 +5,26 @@
 
 html, body {
     height: 100%;
-     background: -webkit-linear-gradient(top, #111111, #FFFFFF);
+    background: -webkit-linear-gradient(top, #111111, #FFFFFF);
+}
+
+.header {
+    background: grey;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .home-page-wrapper {
+    margin-top: 100px;
     background: white;
     height: 100%;
 }
 
-h2 {
+.headertext {
     color: white;
+    margin-top: 0;   
 }
 
 .list {
