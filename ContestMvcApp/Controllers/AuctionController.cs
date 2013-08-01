@@ -3,11 +3,11 @@ using ContestMvcApp.Services;
 
 namespace ContestMvcApp.Controllers
 {
-    public class HomeController : Controller
+    public class AuctionController : Controller
     {
         private readonly ITestService _testService;
 
-        public HomeController(ITestService testService)
+        public AuctionController(ITestService testService)
         {
             _testService = testService;
         }
@@ -15,8 +15,7 @@ namespace ContestMvcApp.Controllers
         public ActionResult Index()
         {
             _testService.DoNothing();
-            return View();
+            return View("Create");
         }
-
     }
 }
