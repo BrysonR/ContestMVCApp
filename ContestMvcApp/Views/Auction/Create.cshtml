@@ -11,11 +11,12 @@
 <div class="row collapse">
     <div class="large-8 large-centered columns">
         <div class="panel home-page-wrapper">
-            <button class="button large primary large-centered columns list">List Item</button>
+            <button class="button large primary large-centered columns list" data-bind="click: createItem">List Item</button>
         </div>
     </div>
 </div>
 
+<!-- ko 'if': itemToList() -->
 <div class="row collapse">
     <div class="large-9 large-centered columns edit">
         <div class="panel">
@@ -37,9 +38,14 @@
             </div>
             <div class="row collapse">
                 <div class="large-2 large-centered columns">
-                    <button class="primary">Done</button>
+                    <button class="primary" data-bind="click: done">Done</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- /ko -->
+
+<script>
+    ko.applyBindings(vm);
+</script>
