@@ -138,7 +138,8 @@
     <Content Include="Content\css\lib\foundation.css" />
     <Content Include="Content\css\lib\foundation.min.css" />
     <Content Include="Content\css\lib\normalize.css" />
-    <Content Include="Content\css\Auction.css" />
+    <Content Include="Content\css\Create.css" />
+    <Content Include="Content\js\Auction.js" />
     <Content Include="Content\js\lib\foundation.min.js" />
     <Content Include="Content\js\lib\foundation\foundation.abide.js" />
     <Content Include="Content\js\lib\foundation\foundation.alerts.js" />
