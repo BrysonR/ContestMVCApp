@@ -5,7 +5,7 @@
 
 html, body {
     height: 100%;
-    background: black;
+     background: -webkit-linear-gradient(top, #111111, #FFFFFF);
 }
 
 .home-page-wrapper {
