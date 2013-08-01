@@ -31,3 +31,13 @@ html, body {
 .list {
     margin-bottom: 0;
 }
+
+.edit {
+    margin-top: -100px;
+    height: 200px;
+}
+
+.field-header {
+    margin-top: 0.75em;
+    text-align: center;
+}
