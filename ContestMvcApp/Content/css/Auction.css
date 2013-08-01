@@ -5,6 +5,7 @@
 
 html, body {
     height: 100%;
+<<<<<<< HEAD
     background: -webkit-linear-gradient(top, #111111, #FFFFFF);
 }
 
@@ -14,6 +15,9 @@ html, body {
     height: 50px;
     width: 100%;
     margin-bottom: 50px;
+=======
+     background: -webkit-linear-gradient(top, #111111, #000FF);
+>>>>>>> bd08058f6d46d566de4f33005c7f21844f6725f0
 }
 
 .home-page-wrapper {
