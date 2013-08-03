@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Web.Mvc;
+using System.Web.UI.WebControls;
 using ContestMvcApp.Services;
 
 namespace ContestMvcApp.Controllers
@@ -25,5 +27,25 @@ namespace ContestMvcApp.Controllers
             public virtual string Origin { get; set; }
             public virtual string Destination { get; set; }
         }
+
+        public class ListingInputModel
+        {
+            public virtual string Title { get; set; }
+            public virtual string Category { get; set; }
+            public virtual string Origin { get; set; }
+            public virtual string Destination { get; set; }
+        }
+
+        [HttpPost]
+        public ActionResult ListItem(ListingData data)
+        {
+            var result = data;
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        //[HttpPut]
+        //public ActionResult SaveItem(ListingData data)
+        //{
+        //}
     }
 }
