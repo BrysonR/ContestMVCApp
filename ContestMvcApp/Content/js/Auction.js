@@ -5,12 +5,19 @@
 
     this.listCategory = ko.observable();
 
-    this.categories = ko.observableArray(['Cars', 'Animals', 'Craziness', 'Uncategorized']);
+    this.categories = ko.observableArray(['Cars', 'Animals', 'Craziness', 'People']);
+
+    this.listOrigin = ko.observable();
+
+    this.listDestination = ko.observable();
+    
 };
 
-var AuctionViewModel = function () {
+var AuctionViewModel = function (bootstrapUrls) {
 
     var self = this;
+
+    this.urls = bootstrapUrls;
 
     this.itemToList = ko.observable(false);
 
@@ -27,6 +34,10 @@ var AuctionViewModel = function () {
         self.listingItems.push(self.listingToAdd());
         self.listingToAdd(null);
         self.listingToAdd(false);
+    };
+
+    this.viewListings = function() {
+
     };
 };
 

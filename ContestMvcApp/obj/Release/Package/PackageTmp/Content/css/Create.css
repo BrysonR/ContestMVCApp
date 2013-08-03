@@ -1,0 +1,47 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background: -webkit-linear-gradient(top, #111111, #FFFFFF);
+}
+
+.header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+    background: -webkit-linear-gradient(top, #111111, #FFFFFF);
+}
+
+.home-page-wrapper {
+    margin-top: 100px;
+    background: white;
+}
+
+.headertext {
+    color: white;
+    margin-top: 0;   
+}
+
+.list {
+    margin-bottom: 0;
+}
+
+.edit {
+    margin-top: -100px;
+    height: 200px;
+}
+
+.field-header {
+    margin-top: 0.75em;
+    text-align: center;
+    color: white;
+}
+
+select {
+    height: 2.3125em;
+}
+

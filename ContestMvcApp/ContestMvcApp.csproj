@@ -135,6 +135,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\css\Edit.css" />
     <Content Include="Content\css\lib\effeckt.css" />
     <Content Include="Content\css\lib\foundation.css" />
     <Content Include="Content\css\lib\foundation.min.css" />
@@ -148,7 +149,7 @@
     <Content Include="Content\js\lib\Effeckts\off-screen-nav.js" />
     <Content Include="Content\js\lib\Effeckts\page-transitions.js" />
     <Content Include="Content\js\lib\Effeckts\_template.js" />
-    <Content Include="Content\js\lib\foundation.min.js" />
+    <Content Include="Content\js\lib\foundation\foundation.min.js" />
     <Content Include="Content\js\lib\foundation\foundation.abide.js" />
     <Content Include="Content\js\lib\foundation\foundation.alerts.js" />
     <Content Include="Content\js\lib\foundation\foundation.clearing.js" />
@@ -165,12 +166,13 @@
     <Content Include="Content\js\lib\foundation\foundation.section.js" />
     <Content Include="Content\js\lib\foundation\foundation.tooltips.js" />
     <Content Include="Content\js\lib\foundation\foundation.topbar.js" />
-    <Content Include="Content\js\lib\knockout\jquery.js" />
-    <Content Include="Content\js\lib\knockout\knockout.extensions.js" />
-    <Content Include="Content\js\lib\knockout\knockout-2.3.0.debug.js" />
-    <Content Include="Content\js\lib\knockout\knockout.ui.js" />
-    <Content Include="Content\js\lib\knockout\knockout.validation.js" />
-    <Content Include="Content\js\lib\knockout\uship.js" />
+    <Content Include="Content\js\lib\jQuery\jquery.js" />
+    <Content Include="Content\js\knockout.extensions.js" />
+    <Content Include="Content\js\knockout-2.3.0.debug.js" />
+    <Content Include="Content\js\knockout.ui.js" />
+    <Content Include="Content\js\knockout.validation.js" />
+    <Content Include="Content\js\lib\Zepto\zepto.js" />
+    <Content Include="Content\js\uship.js" />
     <Content Include="Content\js\lib\vendor\custom.modernizr.js" />
     <Content Include="Content\js\lib\vendor\jquery.js" />
     <Content Include="Content\js\lib\vendor\zepto.js" />

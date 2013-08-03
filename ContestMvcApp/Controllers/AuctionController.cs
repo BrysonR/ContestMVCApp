@@ -17,5 +17,13 @@ namespace ContestMvcApp.Controllers
             _testService.DoNothing();
             return View("Create");
         }
+
+        public class ListingData
+        {
+            public virtual string Title { get; set; }
+            public virtual string Category { get; set; }
+            public virtual string Origin { get; set; }
+            public virtual string Destination { get; set; }
+        }
     }
 }
