@@ -40,3 +40,8 @@ html, body {
     text-align: center;
     color: white;
 }
+
+select {
+    height: 2.3125em;
+}
+

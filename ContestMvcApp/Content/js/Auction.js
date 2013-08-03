@@ -4,6 +4,8 @@
     this.listTitle = ko.observable();
 
     this.listCategory = ko.observable();
+
+    this.categories = ko.observableArray(['Cars', 'Animals', 'Craziness', 'Uncategorized']);
 };
 
 var AuctionViewModel = function () {

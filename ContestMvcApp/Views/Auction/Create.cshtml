@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<!-- ko 'if': itemToList() === true -->
+<!-- ko 'if': itemToList() -->
 <div class="row collapse">
     <div data-bind="with: listingToAdd">
         <div class="large-9 small-12 small-centered columns edit">
@@ -34,12 +34,12 @@
                         <label class="field-header">Category</label>
                     </div>
                     <div class="large-10 columns">
-                        <input type="text" data-bind="value: listCategory" placeholder="Please select category"/>
+                        <select data-bind = "options: categories, value: listCategory"></select>
                     </div>
                 </div>
                 <div class="row collapse">
                     <div class="large-2 large-centered columns">
-                        <button class="secondary" data-bind="click: $parent.saveListing">Done</button>
+                        <button class="secondary" style="margin-top: 10px;"data-bind="click: $parent.saveListing">Done</button>
                     </div>
                 </div>
             </div>

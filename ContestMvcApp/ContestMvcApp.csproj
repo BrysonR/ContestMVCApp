@@ -165,9 +165,12 @@
     <Content Include="Content\js\lib\foundation\foundation.section.js" />
     <Content Include="Content\js\lib\foundation\foundation.tooltips.js" />
     <Content Include="Content\js\lib\foundation\foundation.topbar.js" />
-    <Content Include="Content\js\lib\jquery-1.10.2.js" />
+    <Content Include="Content\js\lib\knockout\jquery.js" />
+    <Content Include="Content\js\lib\knockout\knockout.extensions.js" />
     <Content Include="Content\js\lib\knockout\knockout-2.3.0.debug.js" />
+    <Content Include="Content\js\lib\knockout\knockout.ui.js" />
     <Content Include="Content\js\lib\knockout\knockout.validation.js" />
+    <Content Include="Content\js\lib\knockout\uship.js" />
     <Content Include="Content\js\lib\vendor\custom.modernizr.js" />
     <Content Include="Content\js\lib\vendor\jquery.js" />
     <Content Include="Content\js\lib\vendor\zepto.js" />
