@@ -520,7 +520,7 @@ th.hide-for-xlarge {
   display: table-cell !important; }
 
 /* Medium Displays: 768px - 1279px */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 62.5em) {
   .show-for-medium,
   .show-for-medium-up {
     display: inherit !important; }
@@ -1469,7 +1469,7 @@ button, .button {
     button.round, .button.round {
       -webkit-border-radius: 1000px;
       border-radius: 1000px; } }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 62.5em) {
   button, .button {
     display: inline-block; } }
 /* Standard Forms */
@@ -2461,7 +2461,7 @@ label.error {
   .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
     border-bottom: 0; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 62.5em) {
   [data-section=''], [data-section='auto'], .section-container.auto {
     width: 100%;
     position: relative;
@@ -3331,7 +3331,7 @@ label.error {
 .touch .orbit-bullets {
   display: none; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 62.5em) {
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
     display: inherit; }
@@ -3391,7 +3391,7 @@ label.error {
     font-weight: bold;
     cursor: pointer; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 62.5em) {
   .reveal-modal {
     padding: 1.875em;
     top: 6.25em; }

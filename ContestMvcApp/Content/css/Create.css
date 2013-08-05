@@ -16,16 +16,6 @@ html, body {
     background: -webkit-linear-gradient(top, #111111, #FFFFFF);
 }
 
-.page-content {
-    position: relative;   
-}
-
-.page-wrapper {
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 100% 100%;
-}
-
 .home-page-wrapper {
     margin-top: 100px;
     background: white;
