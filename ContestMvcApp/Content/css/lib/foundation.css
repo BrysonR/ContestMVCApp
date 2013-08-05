@@ -134,7 +134,7 @@ select {
   width: 100%;
   float: left; }
 
-@media only screen and (min-width: 0) {
+@media only screen {
   .column,
   .columns {
     position: relative;
