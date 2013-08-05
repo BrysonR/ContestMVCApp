@@ -1,32 +1,36 @@
 ﻿<!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <link type="text/css" rel="stylesheet" href="~/Content/css/lib/foundation.css" />
-    <link type="text/css" rel="stylesheet" href="~/Content/css/Create.css" />
-    <link type="text/css" rel="stylesheet" href="~/Content/css/Edit.css" />
-    <link type="text/css" rel="stylesheet" href="~/Content/css/lib/normalize.css" />
-    <link type="text/css" rel="stylesheet" href="~/Content/css/lib/effeckt.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <link type="text/css" rel="stylesheet" href="~/Content/css/lib/foundation.css" />
+        <link type="text/css" rel="stylesheet" href="~/Content/css/Create.css" />
+        <link type="text/css" rel="stylesheet" href="~/Content/css/Edit.css" />
+        <link type="text/css" rel="stylesheet" href="~/Content/css/lib/normalize.css" />
+        <link type="text/css" rel="stylesheet" href="~/Content/css/lib/effeckt.css" />
     
-    <title>@ViewBag.Title</title>
+        <title>@ViewBag.Title</title>
     
-    <script type="text/javascript" src="~/Content/js/knockout-2.3.0.debug.js"></script>
-    <script type="text/javascript" src="~/Content/js/lib/jQuery/jquery.js"></script>
-    <script type="text/javascript" src="~/Content/js/knockout.validation.js"></script>
-    <script type="text/javascript" src="~/Content/js/uship.js"></script>
-    <script type="text/javascript" src="~/Content/js/knockout.extensions.js"></script>
-    <script type="text/javascript" src="~/Content/js/knockout.ui.js"></script>
-    <script type="text/javascript" src="~/Content/js/lib/Effeckts/modals.js"></script>
-    <script type="text/javascript" src="~/Content/js/lib/foundation/foundation.js"></script>
-    <script type="text/javascript" src="~/Content/js/lib/foundation/foundation.dropdown.js"></script>
-    <script type="text/javascript" src="~/Content/js/lib/foundation/foundation.reveal.js"></script>    
-    <script type="text/javascript" src="~/Content/js/Auction.js"></script>
-    <script type="text/javascript" src="~/Content/js/lib/Zepto/zepto.js"></script>
+        <script type="text/javascript" src="~/Content/js/knockout-2.3.0.debug.js"></script>
+        <script type="text/javascript" src="~/Content/js/lib/jQuery/jquery.js"></script>
+        <script type="text/javascript" src="~/Content/js/knockout.validation.js"></script>
+        <script type="text/javascript" src="~/Content/js/uship.js"></script>
+        <script type="text/javascript" src="~/Content/js/knockout.extensions.js"></script>
+        <script type="text/javascript" src="~/Content/js/knockout.ui.js"></script>
+        <script type="text/javascript" src="~/Content/js/lib/Effeckts/modals.js"></script>
+        @*<script type="text/javascript" src="~/Content/js/lib/foundation/foundation.js"></script>
+        <script type="text/javascript" src="~/Content/js/lib/foundation/foundation.dropdown.js"></script>
+        <script type="text/javascript" src="~/Content/js/lib/foundation/foundation.reveal.js"></script>    *@
+        <script type="text/javascript" src="~/Content/js/Auction.js"></script>
+        <script type="text/javascript" src="~/Content/js/lib/Zepto/zepto.js"></script>
 
-</head>
-<body>
-    @RenderBody()
-</body>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div id="content" class="page-content">
+                @RenderBody()  
+            </div>
+        </div>
+    </body>
 </html>
