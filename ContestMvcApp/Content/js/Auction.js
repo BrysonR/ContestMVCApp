@@ -1,4 +1,4 @@
-﻿var CreateListingViewModel = function() {
+﻿var CreateListingViewModel = function () {
     var self = this;
     
     this.listTitle = ko.observable();
@@ -13,14 +13,12 @@
     
 };
 
-;
-(function(root) {
+;(function(root) {
     var AuctionViewModel = function(bootstrapUrls, bootstrapData) {
 
         var self = this;
 
         this.urls = {
-            listItem: '@Url.Action("ListItem")'
         };
         
         this.bootstrapData = bootstrapData;
@@ -50,15 +48,14 @@
         /* Ajax Stuffs */
 
         this.listItem = function() {
-
-        var theItem = ko.toJSON(self.listingItems, null, 2);
-        debugger;
-        $.ajax({
-            url: self.urls.ListItem,
-            type: 'POST',
-            data: theItem,
-            contentType: 'application/json'
-            }).then(self.listSuccess.bind(this), self.listFailed.bind(this));
+            var theItem = ko.toJSON(self.listingItems, null, 2);
+            debugger;
+            $.ajax({
+                url: 'Auction/SaveItem',
+                type: 'POST',
+                data: theItem,
+                contentType: 'application/json'
+                }).then(self.listSuccess.bind(this), self.listFailed.bind(this));
         };
 
         this.listSuccess = function() {

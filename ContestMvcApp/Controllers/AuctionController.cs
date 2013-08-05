@@ -1,46 +1,48 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
 using ContestMvcApp.Services;
 
+namespace ContestMVCApp.Models 
+{
+    using System;    
+
+    [Serializable]
+    public class ListingInputModel
+    {
+        public string ListTitle { get; set; }
+        public string ListCategory { get; set; }
+        public string ListOrigin { get; set; }
+        public string ListDestination { get; set; }
+    }
+
+    [Serializable]
+    public class ListingViewModel
+    {
+        public string Message { get; set; }
+    }
+}
+
 namespace ContestMvcApp.Controllers
 {
+    using System;
+    using System.Web.Mvc;
+    using ContestMVCApp.Models;
+
     public class AuctionController : Controller
     {
-        private readonly ITestService _testService;
-
-        public AuctionController(ITestService testService)
-        {
-            _testService = testService;
-        }
 
         public ActionResult Index()
         {
-            _testService.DoNothing();
             return View("Create");
         }
 
-        public class ListingData
-        {
-            public virtual string Title { get; set; }
-            public virtual string Category { get; set; }
-            public virtual string Origin { get; set; }
-            public virtual string Destination { get; set; }
-        }
-
-        public class ListingInputModel
-        {
-            public virtual string Title { get; set; }
-            public virtual string Category { get; set; }
-            public virtual string Origin { get; set; }
-            public virtual string Destination { get; set; }
-        }
-
         [HttpPost]
-        public ActionResult ListItem(ListingData data)
+        public ActionResult SaveItem(ListingInputModel inputModel)
         {
-            var result = data;
-            return Json(result, JsonRequestBehavior.AllowGet);
+            string item = string.Format("Created ListItem '{0}' in the system.", inputModel.ListTitle);
+            return Json(new ListingViewModel {Message = item});
         }
 
         //[HttpPut]
