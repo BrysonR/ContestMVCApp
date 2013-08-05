@@ -6,7 +6,6 @@
 html, body {
     height: 100%;
     background: -webkit-linear-gradient(top, #111111, #FFFFFF);
-    width: 100%;
 }
 
 .header {
