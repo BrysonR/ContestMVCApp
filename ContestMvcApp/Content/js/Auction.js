@@ -45,6 +45,12 @@
 
         };
 
+        this.getList = function() {
+            self.getListings();
+        };
+
+        this.listings = ko.observableArray();
+
         /* Ajax Stuffs */
 
         this.listItem = function() {
@@ -66,6 +72,25 @@
         this.listFailed = function() {
             console.log('Listing Failed :(');
         };
+        
+        this.getListings = function () {
+            $.ajax({
+                url: 'Auction/GetListings',
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json charset; utf-8'
+            }).then(self.getListingsSuccess.bind(this), self.getListingsFailed.bind(this));
+        };
+
+        this.getListingsSuccess = function (data) {
+            self.listings(data);
+            console.log('Get Listings Success!!!');
+        };
+
+        this.getListingsFailed = function () {
+            console.log('Get Listings Failed :(');
+        };
+
     };
 
     vm = new AuctionViewModel ();
