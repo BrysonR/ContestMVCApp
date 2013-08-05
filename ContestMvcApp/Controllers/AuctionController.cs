@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Web.Mvc;
 using System.Web.UI.WebControls;
@@ -8,13 +11,14 @@ namespace ContestMVCApp.Models
 {
     using System;    
 
-    [Serializable]
-    public class ListingInputModel
+
+    public class ListingItem
     {
-        public string ListTitle { get; set; }
-        public string ListCategory { get; set; }
-        public string ListOrigin { get; set; }
-        public string ListDestination { get; set; }
+        public virtual string ListTitle { get; set; }
+        public virtual string ListCategory { get; set; }
+        public virtual string Categories { get; set; }
+        public virtual string ListOrigin { get; set; }
+        public virtual string ListDestination { get; set; }
     }
 
     [Serializable]
@@ -39,10 +43,10 @@ namespace ContestMvcApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult SaveItem(ListingInputModel inputModel)
+        public ActionResult SaveItem(List<ListingItem> ListingItems)
         {
-            string item = string.Format("Created ListItem '{0}' in the system.", inputModel.ListTitle);
-            return Json(new ListingViewModel {Message = item});
+            var item = ListingItems[0].ListTitle;
+            return Json(ListingItems);
         }
 
         //[HttpPut]

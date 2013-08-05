@@ -48,13 +48,14 @@
         /* Ajax Stuffs */
 
         this.listItem = function() {
-            var theItem = ko.toJSON(self.listingItems, null, 2);
+            var theItem = ko.toJSON(self.listingItems);
             debugger;
             $.ajax({
                 url: 'Auction/SaveItem',
                 type: 'POST',
                 data: theItem,
-                contentType: 'application/json'
+                dataType: 'json',
+                contentType: 'application/json charset; utf-8'
                 }).then(self.listSuccess.bind(this), self.listFailed.bind(this));
         };
 
