@@ -28,10 +28,12 @@ html, body {
 
 .list {
     margin-bottom: 0;
+    margin-top: 27px;
 }
 
 .edit {
-    margin-top: -100px;
+    position: relative;
+    margin-top: 0;
     height: 200px;
 }
 
@@ -43,5 +45,9 @@ html, body {
 
 select {
     height: 2.3125em;
+}
+
+.viewListings {
+    margin-top: 10px;
 }
 

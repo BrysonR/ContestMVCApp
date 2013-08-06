@@ -10,60 +10,54 @@
     </div>  
 </div>
 
-<div class="row">
-    <div class="large-5 large-centered columns">
-        <div class="panel home-page-wrapper">
-            <button class="button large primary small-centered columns list" data-bind="click: createItem">List Item</button>
-            <!-- ko 'if': listingItems().length !== 0 -->
-            <button class="button large primary small-centered columns list" data-bind="click: viewListings">View Listings</button>
-            <!-- /ko -->
-        </div>
-    </div>
+<div class="large-5 large-centered columns">
+        <button class="button large primary small-centered columns list" data-bind="click: createItem">List Item</button>
+        <!-- ko 'if': showViewListings() != false -->
+        <button class="button large primary small-centered columns list" data-bind="click: getList">View Listings</button>
+        <!-- /ko -->
 </div>
 
 <!-- ko 'if': itemToList() -->
-<div class="row collapse">
-    <div data-bind="with: listingToAdd">
-        <div class="large-6 large-centered columns edit">
-            <div class="panel callout radius">
-                <div class="row collapse">
-                    <div class="large-2 columns">
-                        <label class="field-header">Title</label>
-                    </div>
-                    <div class="large-10 columns">
-                        <input type="text" data-bind="value: listTitle" placeholder="Please enter the listing title"/>
-                    </div>
+<div data-bind="with: listingToAdd">
+    <div class="large-6 large-centered columns edit">
+        <div class="panel callout radius">
+            <div class="row collapse">
+                <div class="large-2 columns">
+                    <label class="field-header">Title</label>
                 </div>
-                <div class="row collapse">
-                    <div class="large-2 columns">
-                        <label class="field-header">Category</label>
-                    </div>
-                    <div class="large-10 columns">
-                        <select data-bind = "options: categories, value: listCategory"></select>
-                    </div>
+                <div class="large-10 columns">
+                    <input type="text" data-bind="value: listTitle" placeholder="Please enter the listing title"/>
                 </div>
-                <div class="row collapse" style="margin-top: 13px;">
-                    <div class="large-5 columns">
-                        <div class="large-4 columns">
-                            <div class="prefix">Origin</div>
-                        </div>
-                        <div class="large-8 columns">
-                            <input class="originDestination" type="text" data-bind="value: listOrigin" placeholder="City, State"/>
-                        </div>     
-                    </div>
-                    <div class="large-5 columns">
-                        <div class="large-4 columns">
-                            <div class="prefix">Destin.</div>
-                        </div>
-                        <div class="large-8 columns">
-                            <input class="originDestination" type="text" data-bind="value: listDestination" placeholder="City, State"/>
-                        </div>     
-                    </div>
+            </div>
+            <div class="row collapse">
+                <div class="large-2 columns">
+                    <label class="field-header">Category</label>
                 </div>
-                <div class="row collapse">
-                    <div class="large-2 large-centered columns">
-                        <button class="secondary" style="margin-top: 13px;" data-bind="click: $parent.saveListing">Done</button>
+                <div class="large-10 columns">
+                    <select data-bind = "options: categories, value: listCategory"></select>
+                </div>
+            </div>
+            <div class="row collapse" style="margin-top: 13px;">
+                <div class="large-5 columns">
+                    <div class="large-4 columns">
+                        <div class="prefix">Origin</div>
                     </div>
+                    <div class="large-8 columns">
+                        <input class="originDestination" type="text" data-bind="value: listOrigin" placeholder="City, State"/>
+                    </div>     
+                </div>
+                <div class="large-5 columns">
+                    <div class="large-4 columns">
+                        <div class="prefix">Destin.</div>
+                    </div>
+                    <div class="large-8 columns">
+                        <input class="originDestination" type="text" data-bind="value: listDestination" placeholder="City, State"/>
+                    </div>     
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="large-2 large-centered columns">
+                    <button class="secondary" style="margin-top: 13px;" data-bind="click: $parent.saveListing">Done</button>
                 </div>
             </div>
         </div>

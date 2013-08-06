@@ -18,9 +18,8 @@
 
         var self = this;
 
-        this.urls = {
-        };
-        
+        this.showViewListings = ko.observable(false);
+
         this.bootstrapData = bootstrapData;
 
         this.itemToList = ko.observable(false);
@@ -29,6 +28,7 @@
 
         this.createItem = function() {
             self.itemToList(true);
+            self.showViewListings(false);
             self.listingToAdd(new CreateListingViewModel());
         };
 
@@ -37,6 +37,7 @@
         this.saveListing = function() {
             self.listingItems.push(self.listingToAdd());
             self.listingToAdd(null);
+            self.showViewListings(true);
             self.itemToList(false);
             self.listItem();
         };
@@ -50,6 +51,20 @@
         };
 
         this.listings = ko.observableArray();
+
+        ///* jQuery Stuffs */
+
+        //jQuery(document).ready(function () {
+
+        //    jQuery('.itemEdit').hide();
+
+        //    jQuery('.list').click(function() {
+        //        jQuery('.itemEdit').fadeIn();
+        //    });
+        //    jQuery('.saveListing').click(function() {
+        //        jQuery('.itemEdit').fadeOut();
+        //    });
+        //});
 
         /* Ajax Stuffs */
 
@@ -74,6 +89,7 @@
         };
         
         this.getListings = function () {
+            debugger;
             $.ajax({
                 url: 'Auction/GetListings',
                 type: 'POST',
