@@ -42,6 +42,11 @@ namespace ContestMvcApp.Controllers
             return View("Create");
         }
 
+        public ActionResult Listings()
+        {
+            return View("Listings");
+        }
+
         [HttpPost]
         public ActionResult SaveItem(List<ListingItem> ListingItems)
         {

@@ -1,0 +1,38 @@
+﻿@model dynamic
+
+@{
+    Layout = "_AuctionLayout.cshtml";
+}
+
+<div class="row collapse">
+    <div class="small-12 columns">
+        <center><h2 class="headertext">This is Pretty Kickass Still!</h2></center>
+    </div>  
+</div>
+
+<div class="large-6 small-12 small-centered columns">
+    <table>
+        <thead>
+            <tr>
+                <th class="tableHead">Title</th>
+                <th class="tableHead">Category</th>
+                <th class="tableHead">Origin</th>
+                <th class="tableHead">Destination</th>
+            </tr>
+        </thead>
+        <tbody>
+            <div data-bind="forEach: listingItems">
+                <tr>
+                    <td class="tableData" data-bind="text: listTitle"</td>
+                    <td class="tableData" data-bind="text: listCategory"></td>
+                    <td class="tableData" data-bind="text: listOrigin"></td>
+                    <td class="tableData" data-bind="text: listDestination"></td>
+                </tr>
+            </div>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    ko.applyBindings(vm);
+</script>

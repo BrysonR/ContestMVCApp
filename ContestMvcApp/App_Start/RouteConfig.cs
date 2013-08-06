@@ -14,10 +14,17 @@ namespace ContestMvcApp
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
+                name: "Auction",
+                url: "Auction/index/{id}",
                 defaults: new { controller = "Auction", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Listings",
+                url: "Auction/Listings/{id}",
+                defaults: new { controller = "Auction", action = "Listings", id = UrlParameter.Optional }
+            );
+
         }
     }
 }

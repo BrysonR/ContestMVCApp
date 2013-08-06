@@ -141,6 +141,7 @@
     <Content Include="Content\css\lib\foundation.min.css" />
     <Content Include="Content\css\lib\normalize.css" />
     <Content Include="Content\css\Create.css" />
+    <Content Include="Content\css\Listings.css" />
     <Content Include="Content\js\Auction.js" />
     <Content Include="Content\js\lib\Effeckts\buttons.js" />
     <Content Include="Content\js\lib\Effeckts\list-items.js" />
@@ -205,6 +206,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Auction\_AuctionLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Auction\Listings.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
